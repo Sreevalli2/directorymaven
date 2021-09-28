@@ -20,7 +20,8 @@ public class login {
 		driver.get("https://www.google.com/");
 		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys("hi");
 		
-		driver.findElement(By.xpath("//input[@class='gNO89b']")).submit();	
+		driver.findElement(By.xpath("//input[@class='gNO89b']")).submit();
+		driver.findElement(By.linkText("News")).click();
 		}
 	
 	@AfterTest
