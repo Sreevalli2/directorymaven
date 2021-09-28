@@ -18,16 +18,17 @@ public class login {
 	{
 		
 		driver.get("https://www.google.com/");
+		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys("hi");
 		
 		driver.findElement(By.xpath("//input[@class='gNO89b']")).submit();
-		driver.findElement(By.linkText("News")).click();
+		driver.findElement(By.linkText("high")).submit();
 		}
 	
 	@AfterTest
 	public void teardown() throws Exception
 	{
-	Thread.sleep(1500);
+	Thread.sleep(2000);
 	driver.close();
 	}
 
