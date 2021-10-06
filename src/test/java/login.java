@@ -22,7 +22,7 @@ public class login {
 		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys("hi");
 		
 		driver.findElement(By.xpath("//input[@class='gNO89b']")).submit();
-		driver.findElement(By.linkText("high")).submit();
+
 		}
 	
 	@AfterTest
